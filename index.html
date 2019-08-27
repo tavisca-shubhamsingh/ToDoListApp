@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+
+</head>
+<body>
+    <div class="page">
+
+        <div class="nav">
+            TO DO LIST 
+            <div class="subtag">made for procrastinators like you... </div>
+        </div>
+        
+        <div class="app">
+            <div class="sidebar">
+                    <div class="tab">
+                            <button class="tablinks" onclick="changeTab(event, 'todo')" id="defaultOpen">To Do</button>
+                            <button class="tablinks" onclick="changeTab(event, 'users')">Users</button>
+                            <button class="tablinks" onclick="changeTab(event, 'about')">About</button>                          
+                    </div>
+            </div>
+
+            <div class="content">
+
+                <div id="todo" class="tabcontent">
+                        <div id="myTodo" class="todoContainer">
+                                <input type="text" id="myInput" placeholder="write a thing to do...">
+                                <span onclick="newElement()" class="addBtn"><b>Add to list</b></span>
+                        </div>
+                              
+                        <ul id="list-items">
+ 
+                        </ul>
+
+                </div>
+
+                <div id="users" class="tabcontent">
+                    <br>
+                    <br>
+                    <h1>Shubham</h1>
+                    <p>Master procrastinator</p>
+
+                </div>
+                <div id="about" class="tabcontent">
+                    <h1>To do app</h1>
+                </div>
+
+
+            </div>
+        
+        </div>
+
+    </div>
+
+    
+    
+    
+
+    <script type="text/javascript" src="scripts/script.js"></script> 
+</body>
+</html>
